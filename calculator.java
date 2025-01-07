@@ -1,8 +1,13 @@
 import java.util.Scanner;
+import java.lang.Math;
 public class calculator{
+
 
     public static int adder(int a, int b){
         return a+b;
+    }
+    public static int power(int a,int b){
+        return (int) Math.pow(a,b);
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
@@ -24,6 +29,9 @@ public class calculator{
                 break;
             case '/':
                 System.out.println(a/b);
+                break;
+            case '^':
+                System.out.println(power(a,b));
                 break;
             default:
                 System.out.println("Please enter the valid character");
