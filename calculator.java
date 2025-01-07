@@ -1,5 +1,9 @@
 import java.util.Scanner;
 public class calculator{
+
+    public static int adder(int a, int b){
+        return a+b;
+    }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the first number");
@@ -10,7 +14,7 @@ public class calculator{
         char op = sc.next().charAt(0);
         switch (op){
             case '+':
-                System.out.println(a+b);
+                System.out.println(adder(a,b));
                 break;
             case '-':
                 System.out.println(a-b);
