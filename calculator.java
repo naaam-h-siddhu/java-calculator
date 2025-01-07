@@ -2,7 +2,9 @@ import java.util.Scanner;
 import java.lang.Math;
 public class calculator{
 
-
+    public static int sqsum(int a, int b){
+        return (a*a)+(b*b);
+    }
     public static int adder(int a, int b){
         return a+b;
     }
@@ -32,6 +34,9 @@ public class calculator{
                 break;
             case '^':
                 System.out.println(power(a,b));
+                break;
+            case 's':
+                System.out.println(sqsum(a,b));
                 break;
             default:
                 System.out.println("Please enter the valid character");
